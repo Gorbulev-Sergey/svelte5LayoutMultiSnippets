@@ -1,6 +1,6 @@
 # Несколько сниппетов в макете
 
-Мой store файл:
+Мой store.ts файл:
 
 ```javascript
 import type { Snippet } from 'svelte';
