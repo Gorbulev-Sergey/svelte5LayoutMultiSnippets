@@ -45,4 +45,5 @@ export let Footer: Writable<Snippet> = writable();
 {/snippet}
 ```
 Результат:
+
 ![alt text](static/1.png)
