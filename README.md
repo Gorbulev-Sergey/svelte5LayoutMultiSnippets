@@ -1,4 +1,5 @@
 # Несколько сниппетов в макете
+#### В svelte 5 нашёл для себя такой вариант добавить в макет несколько сниппетов
 
 Мой store.ts файл:
 
@@ -30,8 +31,6 @@ export let Footer: Writable<Snippet> = writable();
 	import { Header, Footer } from '$lib/scripts/store';
 	$Header = header;
 	$Footer = footer;
-
-	let array: (string | number)[] = $state([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 </script>
 
 {#snippet header()}
