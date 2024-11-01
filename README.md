@@ -2,7 +2,7 @@
 
 Мой store файл:
 
-```
+```javascript
 import type { Snippet } from 'svelte';
 import { writable, type Writable } from 'svelte/store';
 
@@ -12,7 +12,7 @@ export let Footer: Writable<Snippet> = writable();
 
 Мой +layout.svelte:
 
-```
+```svelte
 <script lang="ts">
 	import { Footer, Header } from '$lib/scripts/store';
 	let { children } = $props();
@@ -25,7 +25,7 @@ export let Footer: Writable<Snippet> = writable();
 
 Мой +page.svelte:
 
-```
+```svelte
 <script lang="ts">
 	import { Header, Footer } from '$lib/scripts/store';
 	$Header = header;
